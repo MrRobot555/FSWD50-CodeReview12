@@ -96,3 +96,8 @@ a:hover {
   color: #fff !important;
 }
 
+.menu-item i._before .rtl.menu-item i._after {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}

@@ -51,20 +51,13 @@ function ScanWP_widgets_init() {
   ) );
   register_sidebar( array(
     'name'          => 'sidebar',
-    'id'            => 'sidebar',
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h4 class="ttl">',
-    'after_title'   => '</h4>',
-  ) );
-    register_sidebar( array(
-    'name'          => esc_html__( 'Sidebar Post'),
-    'id'            => 'sidebar-post',
-    'description'   => esc_html__( 'Add widgets here.', 'cfv' ),
-    'before_widget' => '<section id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
+    'id'            => 'sidebar-1',
+    'class'         => 'custom',
+    'description'   => 'standard sidebar',
+    'before_widget' => '<aside id="%1$s" class="mt-4 widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h5 class="widget-title">',
+    'after_title'   => '</h5>',
   ) );
 }
 add_action( 'widgets_init', 'ScanWP_widgets_init' );
